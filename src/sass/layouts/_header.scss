@@ -1,0 +1,70 @@
+main {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $lightgraybg;
+}
+header {
+  position: sticky;
+  top: 0px;
+  height: 70px;
+  padding: 18px 40px;
+  width: 100%;
+  z-index: 10;
+  background-color: $light;
+  box-shadow: 0 8px 28px 0 rgba(72, 89, 102, 0.1);
+}
+nav {
+  .nav_sec_left {
+    svg {
+        cursor: pointer;
+      width: 26px;
+      height: 18px;
+      path {
+        fill: $lightdark;
+      }
+    }
+    li {
+      margin-right: 20px;
+    }
+    .burger_menu {
+      cursor: pointer;
+    }
+    &_search {
+      width: 300px;
+      background-color: $lightgraybg;
+      padding: 8px 20px;
+      border-radius: 12px;
+      input {
+        font-family: Oxygen;
+        font-size: $xs-text;
+        color: $navyblue;
+        width: 100%;
+        margin-inline: 14px;
+        background-color: transparent;
+        &:focus {
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+  .nav_sec_right{
+    margin-left: auto;
+    svg {
+        cursor: pointer;
+        width: 26px;
+        height: 18px;
+        path {
+          fill: $lightdark;
+        }
+      }
+      li {
+        margin-right: 20px;
+      }
+      img{
+        cursor: pointer;
+      }
+  }
+}

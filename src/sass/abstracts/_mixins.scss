@@ -1,0 +1,25 @@
+
+
+$colors: (
+  "warning": $warning,
+  "lightgray": $lightgray,
+  "lightgraytwo": $lightgraytwo,
+  "light": $light,
+  "dark": $dark,
+  "danger": $danger,
+  "skyblue": $skyblue,
+  "blue": $blue,
+  "lightblue": $lightblue,
+  "cyan": $cyan,
+  "cyanlight": $cyanlight,
+  "cyandark":$cyandark,
+  "navyblue": $navyblue,
+);
+
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+}
+
+

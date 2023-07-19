@@ -1,0 +1,211 @@
+.side_bar {
+  width: 230px;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  top: 0;
+  background-color: $navyblue;
+  transition: all 0.5s ease-in;
+  .side_logo_wrap {
+    padding: 23px 15px 23px 23px;
+  }
+  &.collapsed-menu {
+    width: 65px;
+    transition: all 0.6s ease-in-out;
+    .side_logo_wrap {
+      padding: 23px 16px;
+    }
+    .menu_item_arrow {
+      display: none;
+    }
+    .menu {
+      &_box {
+        .dropdown-collapse{
+          position: absolute;
+          z-index: 10;
+        }
+        ul {
+          li {
+            padding: 12px;
+          }
+        }
+        &:hover {
+          ul {
+            height: auto;
+            overflow: hidden;
+            position: absolute;
+            z-index: 10;
+            left: 100%;
+            top: -100px;
+            width: 150px;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            background-color: $cyanlight;
+            transition: height 0.8s ease,left 0.8s ease;
+          }
+        }
+      }
+    }
+
+    .menu_item {
+      width: 100%;
+      padding: 10px 0px;
+
+      svg {
+        width: 100%;
+      }
+      p {
+        transition: all 0.3s ease-in;
+        display: none;
+      }
+    }
+  }
+
+  &_title {
+    color: $light;
+    font-size: $sm-1000-text;
+    font-family: Oxygen;
+    letter-spacing: 1px;
+    padding-inline: 18px;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    &:not(:first-child) {
+      margin-top: 14px;
+    }
+  }
+
+  .menu {
+    height: calc(100vh - 140px);
+    &_box {
+      position: relative;
+      width: 100%;
+      flex-direction: column;
+      ul {
+        position: relative;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        background-color: $cyanlight;
+        transition: height 0.3s ease-in-out;
+        li {
+          padding: 16px;
+          color: $dark;
+          font-size: $sm-text;
+          font-family: Oxygen;
+          &:hover {
+            color: $light;
+            background-color: $light-500;
+          }
+        }
+      }
+
+      &:hover {
+        ul {
+          position: relative;
+          z-index: 20;
+          height: 280px;
+          overflow: hidden;
+          transition: height 0.3s ease-in-out;
+        }
+        .menu_item{
+          &_arrow {
+            border-left: 1px solid $light;
+            border-bottom: 1px solid $light;
+            transform: rotate(315deg);
+          }
+        }
+        
+      }
+    }
+    &_item {
+      padding-left: 16px;
+      padding-right: 12px;
+      padding-block: 14px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      cursor: pointer;
+      svg {
+        height: 24px;
+        width: 25%;
+        path {
+          fill: $lightgraytwo;
+        }
+      }
+      p {
+        color: $lightgraytwo;
+        font-size: $sm-text;
+        font-family: Oxygen;
+        padding-inline: 12px;
+        width: 75%;
+        white-space: nowrap;
+      }
+      &_arrow {
+        width: 10px;
+        height: 10px;
+        margin-left: auto;
+        margin-top: -5px;
+        border-left: 1px solid $light;
+        border-bottom: 1px solid $light;
+        transform: rotate(225deg);
+        transition: all 0.3s ease-in;
+
+      }
+      &:hover {
+        background-color: $light-500;
+        // &_arrow {
+        //   border-left: 1px solid $light;
+        //   border-bottom: 1px solid $light;
+        //   transform: rotate(315deg);
+        // }
+        p {
+          color: $light;
+        }
+        svg {
+          path {
+            fill: $light;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 3px;
+          height: 48px;
+          background-color: $warning;
+        }
+
+        // ul {
+        //   height: auto;
+        //   overflow: hidden;
+        //   transition: all 0.3s ease-in;
+        // }
+      }
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .log_out_menu {
+    position: absolute;
+    bottom: 0px;
+    background-color: $navyblue;
+    z-index: 10;
+    width: 100%;
+  }
+}
+.side_logo_wrap {
+  &_img {
+    width: 32px;
+    height: auto;
+  }
+  &_heading {
+    color: $light;
+    font-size: $sm-500-text;
+    font-family: Oxygen-Bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-left: 10px;
+  }
+}
