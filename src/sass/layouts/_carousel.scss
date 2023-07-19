@@ -1,5 +1,7 @@
 .carousel_cnt {
   position: relative;
+  transition: all 0.4s ease-in;
+
 //   overflow: hidden;
   .cr_header {
     &_left {
@@ -63,8 +65,8 @@
     position: relative;
     margin: 14px auto;
   overflow: hidden;
-
     width: 100%;
+    transition: all 0.4s ease-in;
     // max-width: 2400px;
     // overflow-x: scroll;
     // overflow-y: hidden;
