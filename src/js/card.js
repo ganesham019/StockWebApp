@@ -10,7 +10,7 @@ const graphListsArray = [
         "XaxisLineColor": "transparent",
         "XaxisLabel": false,
         "YAxisVisible": false,
-        "color": "#5470de",
+        "color": "#FFC247",
         "tooltip": false,
         "points": [
             3.2,
@@ -34,7 +34,7 @@ const graphListsArray = [
         "XaxisLineColor": "transparent",
         "XaxisLabel": false,
         "YAxisVisible": false,
-        "color": "#ffc246",
+        "color": "#F7931A",
         "tooltip": false,
         "points": [
             3.2,
@@ -251,8 +251,6 @@ graphListsArray.forEach((data, index) => {
         },
         tooltip: {
             formatter: function (tooltip) {
-                debugger;
-
                 return data.tooltip;
             }
         },

@@ -2,4 +2,5 @@ import './sass/home.scss';
 import './js/main';
 import './js/carousel';
 import './js/card';
-import './js/loadSection';
+import './js/loadGraph';
+import './js/candle';
