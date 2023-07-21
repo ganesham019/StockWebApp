@@ -53,7 +53,8 @@
       width: 100%;
       border-top: 1px solid $cyanlight;
       p {
-        // width: 34%;
+        text-align: center;
+        width: 33%;
         color: $lightdark;
         font-size: $xs-text;
         font-family: Oxygen-Bold;
@@ -67,9 +68,9 @@
         display: none;
       }
       .act_list_item {
-        div{
-            width: 100%;
-        }
+        // div{
+        //     width: 100%;
+        // }
         padding: 14px 20px;
         border-bottom: 0.2px solid $lightgray;
 
@@ -80,8 +81,8 @@
           color: $muted;
           font-size: $xs-text;
           font-family: Oxygen;
-        //   text-align: left;
-        //   width: 33%;
+          text-align: center;
+          width: 33%;
           &:last-child {
             color: $lightblue;
           }
