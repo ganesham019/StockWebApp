@@ -1,6 +1,4 @@
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const listItems = document.querySelectorAll('.act_list_item')
 

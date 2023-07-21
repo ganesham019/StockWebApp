@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
     const handleActiveMenu = (item) => {
         menuItems.forEach((menuitem) => {
             menuitem.classList.remove('active');
