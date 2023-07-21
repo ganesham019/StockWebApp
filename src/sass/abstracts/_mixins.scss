@@ -38,3 +38,21 @@ $colors: (
     color: $blue;
   }
 }
+@mixin secondaryBtn($color) {
+  padding: 8px 22px;
+  font-family: Oxygen;
+  font-size: $xs-text;
+  color: $blue;
+  background-color: $light;
+  border-radius: 6px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.5s;
+  border: 1px solid $color;
+  &:hover {
+    background-color: $color;
+    color: $light;
+    background-image: none;
+    border: 1px solid $color;
+  }
+}

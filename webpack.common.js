@@ -5,7 +5,7 @@ module.exports = {
     entry: "./src/index.js",
     devServer: {
         static: path.resolve(__dirname, "dist"),
-        port:3000,
+        port: 3000,
     },
     module: {
         rules: [

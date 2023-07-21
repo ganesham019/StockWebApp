@@ -1,8 +1,6 @@
 .carousel_cnt {
   position: relative;
   transition: all 0.4s ease-in;
-
-  //   overflow: hidden;
   .cr_header {
     &_left {
       p {
@@ -11,18 +9,10 @@
         font-family: Oxygen;
         cursor: pointer;
         &.pg_active {
-          span {
-            border-top: 8px solid $blue;
-          }
           color: $blue;
         }
         span {
-          display: inline-block;
-          margin-inline: 10px;
-          border-left: 8px solid transparent;
-          border-right: 8px solid transparent;
-          border-top: 8px solid $dark;
-          transform: rotate(314deg);
+          @extend %arc;
         }
       }
     }
