@@ -1,0 +1,147 @@
+.graph {
+  background: $light;
+  border-radius: 12px;
+  .gph_left {
+    width: 74%;
+    overflow-y: scroll;
+    border-right: 1px solid $lightgray;
+    &_header {
+      padding: 0px 20px;
+      height: 48px;
+      li {
+        &:nth-child(1) {
+          font-family: Oxygen;
+          font-size: $sm-text;
+        }
+        .buy_btn {
+          @include btn($lightblue);
+          background-image: linear-gradient(85deg, #0043ff 15%, #a370f1 106%);
+        }
+      }
+    }
+    &_sub {
+      width: 100%;
+      height: 48px;
+      background-color: $lightgraybg;
+      p {
+        font-family: Oxygen-Light;
+        font-size: $xs-text;
+        margin: 0px 14px;
+      }
+      .coin_value {
+        p {
+          &:nth-child(1) {
+            font-size: $sm-1000-text;
+          }
+        }
+      }
+      .coin_volume {
+        p {
+          font-family: Oxygen;
+          font-size: $xs-text;
+          color: $dark;
+        }
+        span {
+          margin-left: 12px;
+          color: $muted;
+        }
+      }
+      .coin_alert {
+        p {
+          font-family: Oxygen;
+          color: $dark;
+        }
+        svg {
+          margin-inline: 14px;
+          width: 14px;
+          height: 14px;
+          path {
+            fill: $blue;
+          }
+          &:hover {
+            path {
+              fill: $dark;
+            }
+          }
+        }
+      }
+    }
+  }
+  .gph_rht {
+    width: 26.6%;
+    align-self: flex-start;
+    &_heading {
+      padding: 0px 20px;
+      height: 48px;
+      li {
+        &:nth-child(1) {
+          font-family: Oxygen;
+          font-size: $sm-text;
+        }
+        &:last-child {
+          svg {
+            width: 18px;
+            height: 18px;
+            path {
+              fill: $lightgray500;
+            }
+            &:hover {
+              path {
+                fill: $dark;
+              }
+            }
+          }
+          transform: rotate(268deg);
+        }
+      }
+    }
+    &_coins {
+      flex-direction: column;
+      &_itm {
+        cursor: pointer;
+        padding-inline: 20px;
+        width: 100%;
+        height: 47px;
+        font-family: Oxygen-Light;
+        .title {
+          color: $navyblue;
+          font-family: Oxygen;
+          font-size: $xs-text;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+        p {
+          font-size: $xs-text;
+          &:first-child {
+            margin-right: auto;
+          }
+          &:nth-child(3) {
+            font-family: Oxygen-Bold;
+          }
+        }
+        span {
+          svg {
+            width: 14px;
+            height: 20px;
+          }
+          .up {
+            path {
+              fill: $cyan;
+            }
+          }
+          .down {
+            path {
+              fill: $danger;
+            }
+          }
+        }
+        &:hover {
+          background-color: $lightgraybg;
+        }
+      }
+    }
+  }
+}

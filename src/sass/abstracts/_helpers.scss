@@ -16,6 +16,9 @@
 .fx{
     display: flex;
 }
+.al-st{
+    align-items: start;
+}
 .txt-up-cse{
     text-transform: uppercase;
 }
@@ -43,6 +46,12 @@
     margin-bottom: 50px;
 }
 
+.mr-auto{
+    margin-right: auto;
+}
+.ml-auto{
+    margin-left: auto;
+}
 .show{
     display: block;
 }
@@ -51,4 +60,7 @@
 }
 .ovf-scroll{
     overflow: scroll;
+}
+.bd-bo-1{
+    border-bottom: 0.5px  solid $lightgray;
 }

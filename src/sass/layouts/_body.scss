@@ -1,4 +1,8 @@
 .body-section{
-    // position: relative;
+    position: relative;
+    width: 100%;
+    overflow-y: scroll;
+    height: calc(100vh - 70px);
     padding: 10px 20px;
+
 }

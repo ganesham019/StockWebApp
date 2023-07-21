@@ -20,6 +20,9 @@
     }
     .menu {
       &_box {
+        &.active {
+          background-color: $cyanlight;
+        }
         ul {
           li {
             padding: 12px;
@@ -37,7 +40,7 @@
             border-top-right-radius: 12px;
             border-bottom-right-radius: 12px;
             background-color: $cyanlight;
-            transition: height 0.8s ease,left 0.8s ease;
+            transition: height 0.8s ease, left 0.8s ease;
           }
         }
       }
@@ -76,6 +79,19 @@
       position: relative;
       width: 100%;
       flex-direction: column;
+      &.active {
+        background-color: $cyanlight;
+        & .menu_item {
+          p {
+            color: $light;
+          }
+          svg {
+            path{
+              fill: $light;
+            }
+          }
+        }
+      }
       ul {
         position: relative;
         width: 100%;
@@ -103,14 +119,13 @@
           overflow: hidden;
           transition: height 0.3s ease-in-out;
         }
-        .menu_item{
+        .menu_item {
           &_arrow {
             border-left: 1px solid $light;
             border-bottom: 1px solid $light;
             transform: rotate(315deg);
           }
         }
-        
       }
     }
     &_item {
@@ -129,7 +144,7 @@
         }
       }
       p {
-        color: $lightgraytwo;
+        color: $lightgray500;
         font-size: $sm-text;
         font-family: Oxygen;
         padding-inline: 12px;
@@ -145,7 +160,6 @@
         border-bottom: 1px solid $light;
         transform: rotate(225deg);
         transition: all 0.3s ease-in;
-
       }
       &:hover {
         background-color: $light-500;
