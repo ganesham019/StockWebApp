@@ -5,6 +5,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = merge(common, {
     mode: "production",
+    devtool: 'source-map',
+    devServer: {
+        static: path.resolve(__dirname, "dist")
+    },
     output: {
         filename: "js/bundle.js",
         path: path.resolve(__dirname, "dist"),

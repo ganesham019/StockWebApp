@@ -3,10 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.js",
-    devServer: {
-        static: path.resolve(__dirname, "dist"),
-        port: 3000,
-    },
+    performance: {
+        hints: false,
+        maxEntrypointSize: 244 * 1024, // 244 KiB limit for entry point size
+        maxAssetSize: 244 * 1024,      // 244 KiB limit for individual asset size
+      },
     module: {
         rules: [
             {

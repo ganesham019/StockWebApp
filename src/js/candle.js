@@ -4,8 +4,9 @@ var Highcharts = require('highcharts/highstock');
 // Load Highcharts Maps as a module to get both Maps and Stock
 require('highcharts/modules/map')(Highcharts);
 // Load the data for the Highstock chart
-// Sample data for demonstration purposes
 
+
+// Sample data for demonstration purposes
 const data = [
     {
         "name": "BTC",
@@ -562,7 +563,6 @@ const data = [
         ]
     }
 ]
-
 
 data.forEach((data, index) => {
     // create the chart
