@@ -7,7 +7,7 @@ module.exports = {
         hints: false,
         maxEntrypointSize: 244 * 1024, // 244 KiB limit for entry point size
         maxAssetSize: 244 * 1024,      // 244 KiB limit for individual asset size
-      },
+    },
     module: {
         rules: [
             {
