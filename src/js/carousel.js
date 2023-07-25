@@ -22,5 +22,8 @@ let swiper = new Swiper(".swiper", {
         950: {
             slidesPerView: 4,
         },
+        1200: {
+            slidesPerView: 4,
+        },
     },
 });

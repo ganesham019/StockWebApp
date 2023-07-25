@@ -2,9 +2,11 @@
   position: relative;
   .act_sec {
     width: 48%;
+    height: 100vh;
     margin-right: 20px;
     background-color: $light;
     border-radius: 12px;
+
     &_heading {
       font-size: $sm-500-text;
       font-family: Oxygen;
@@ -61,7 +63,7 @@
       }
     }
     .act_list_items {
-      max-height: 400px;
+      height: 400px;
       overflow-y: scroll;
       scrollbar-width: none; // safari/IE/other older browser
       &::-webkit-scrollbar {
@@ -70,7 +72,7 @@
       .act_list_item {
         padding: 14px 20px;
         border-bottom: 0.2px solid $lightgray;
-
+        height: 40px;
         &:last-child {
           border: none;
         }
@@ -87,9 +89,8 @@
       }
     }
   }
-
   .news_sec {
-    width: 50%;
+    width: 52%;
     background-color: $light;
     border-radius: 12px;
     scrollbar-width: none; // safari/IE/other older browser
@@ -158,6 +159,11 @@
       &::-webkit-scrollbar {
         display: none;
       }
+    }
+  }
+  @media (min-width: 2000px) and (max-width: 4000px) {
+    .act_sec {
+      height: 80vh;
     }
   }
 }
