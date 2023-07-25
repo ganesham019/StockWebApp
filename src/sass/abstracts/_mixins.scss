@@ -20,6 +20,12 @@ $colors: (
   }
 }
 
+@mixin flexbox($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
 @mixin btn($color) {
   padding: 4px 22px;
   font-family: Oxygen;

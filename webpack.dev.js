@@ -5,14 +5,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = merge(common,{
     mode: "development",
-    entry: "./src/index.js",
-    devServer: {
-        static: path.resolve(__dirname, "dist"),
-        port:3000
-    },
     output: {
         filename: "js/bundle.js",
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "build"),
         assetModuleFilename: "images/[name].[hash][ext]"
     },
     module: {

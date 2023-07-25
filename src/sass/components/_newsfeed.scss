@@ -63,14 +63,11 @@
     .act_list_items {
       max-height: 400px;
       overflow-y: scroll;
-      scrollbar-width: none; //safari/IE/other older browser
+      scrollbar-width: none; // safari/IE/other older browser
       &::-webkit-scrollbar {
         display: none;
       }
       .act_list_item {
-        // div{
-        //     width: 100%;
-        // }
         padding: 14px 20px;
         border-bottom: 0.2px solid $lightgray;
 
@@ -95,7 +92,7 @@
     width: 50%;
     background-color: $light;
     border-radius: 12px;
-    scrollbar-width: none; //safari/IE/other older browser
+    scrollbar-width: none; // safari/IE/other older browser
     .news_sec_header {
       padding: 14px 20px;
       &_title {
