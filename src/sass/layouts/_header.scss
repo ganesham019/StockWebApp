@@ -6,12 +6,13 @@ main {
   background-color: $lightgraybg;
 }
 header {
-  position: fixed;
+  position: sticky;
   top: 0px;
   height: 70px;
   padding: 18px 40px;
   // reducing sidebar width from header width
-  width: calc(100% - 190px);
+  width: 100%;
+  // width: calc(100% - 190px);
   z-index: 10;
   background-color: $light;
   box-shadow: 0 8px 28px 0 rgba(72, 89, 102, 0.1);

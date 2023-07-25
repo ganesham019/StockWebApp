@@ -70,6 +70,7 @@
         display: none;
       }
       .act_list_item {
+        cursor: pointer;
         padding: 14px 20px;
         border-bottom: 0.2px solid $lightgray;
         height: 40px;
@@ -124,6 +125,7 @@
             color: $lightdark;
             font-size: $xs-text;
             margin-bottom: 8px;
+            text-align: left;
             &:nth-child(2) {
               font-size: $sm-500-text;
             }
