@@ -275,7 +275,6 @@ graphListsArray.forEach((data, index) => {
             }
         },
         series: [
-
             {
                 data: data.points.map((x, index) => x)
             }

@@ -1,8 +1,13 @@
 .body-section{
     position: relative;
+    top: 80px;
+    margin: auto;
     width: 100%;
     overflow-y: scroll;
-    height: calc(100vh - 70px);
+    height: 100vh;
     padding: 10px 20px;
-
+    scrollbar-width: none; // safari/IE/other older browser
+    &::-webkit-scrollbar {
+      display: none;
+    }
 }

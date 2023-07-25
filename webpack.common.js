@@ -1,13 +1,15 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
     entry: "./src/index.js",
-    performance: {
-        hints: false,
-        maxEntrypointSize: 244 * 1024, // 244 KiB limit for entry point size
-        maxAssetSize: 244 * 1024,      // 244 KiB limit for individual asset size
+     devServer: {
+        port:3000
     },
+    // performance: {
+    //     hints: false,
+    //     maxEntrypointSize: 244 * 1024, // 244 KiB limit for entry point size
+    //     maxAssetSize: 244 * 1024,      // 244 KiB limit for individual asset size
+    // },
     module: {
         rules: [
             {

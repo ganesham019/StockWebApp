@@ -1,18 +1,13 @@
 .fx-c {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox(center);
 }
 .fx-s {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexbox(space-between);
 }
 .fx-st {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @include flexbox(flex-start);
 }
+
 .fx {
   display: flex;
 }
@@ -27,7 +22,10 @@
 }
 
 .container {
-  max-width: 1400px;
+  margin: auto;
+}
+.content-container{
+  max-width: 2000px;
   margin: auto;
 }
 .mb-1 {

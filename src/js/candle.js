@@ -5,7 +5,6 @@ var Highcharts = require('highcharts/highstock');
 require('highcharts/modules/map')(Highcharts);
 // Load the data for the Highstock chart
 
-
 // Sample data for demonstration purposes
 const data = [
     {
